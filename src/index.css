@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #14311F;
+  --color-forest-deep: #0C1F13;
+  --color-forest-soft: #1A3D26;
+  --color-forest-border: #234A33;
+
+  --color-paper: #F5EFE0;
+  --color-paper-soft: #FAF6EA;
+  --color-paper-warm: #ECE3CC;
+  --color-paper-border: #D9CFB3;
+
+  --color-gold: #BCA36C;
+  --color-gold-bright: #D8BD83;
+  --color-gold-deep: #8E7A4D;
+
+  --color-ink: #14311F;
+  --color-ink-soft: #2D4A38;
+  --color-ink-dim: #6E7568;
+
+  --color-bone: #F5F0E4;
+  --color-ash: #B0AC95;
+  --color-ash-dim: #6E6A5A;
+
+  --color-bark: #685642;
+  --color-leaf: #B7C68B;
+  --color-sand: #DED29E;
+
+  --font-display: "Cormorant Garamond", "Cormorant", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wood-grain-dark {
+  background-image:
+    repeating-linear-gradient(
+      92deg,
+      transparent 0,
+      transparent 3px,
+      rgb(216 189 131 / 0.022) 3px,
+      rgb(216 189 131 / 0.022) 4px,
+      transparent 4px,
+      transparent 9px
+    );
+}
