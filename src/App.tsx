@@ -5,30 +5,36 @@ import LogoMark from './components/LogoMark'
 
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-forest-deep">
+    <div className="flex flex-col min-h-screen bg-paper">
       <Nav />
 
-      <main className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-        <LogoMark className="w-20 h-20 text-gold/60 mb-10" />
+      <main className="flex-1 flex flex-col items-center justify-center px-6 py-20 text-center">
+        <LogoMark className="w-14 h-14 text-gold-deep mb-8 opacity-70" />
 
-        <p className="text-[10px] tracking-[0.4em] uppercase text-gold/60 mb-6">
-          Arquitectura e Ingeniería en Madera
-        </p>
-
-        <h1 className="font-display text-4xl md:text-6xl font-semibold text-bone tracking-wide leading-tight mb-6">
+        <h1 className="font-display text-4xl md:text-5xl font-semibold text-ink tracking-tight leading-tight">
           Sitio en mantención
         </h1>
 
-        <p className="text-bone/50 text-sm md:text-base max-w-sm leading-relaxed">
-          Estamos preparando algo especial. Mientras tanto, escríbenos.
+        <p className="mt-4 text-ink-dim text-sm md:text-base max-w-sm leading-relaxed">
+          Estamos trabajando en algo nuevo. Volvemos pronto.
         </p>
 
-        <a
-          href="mailto:info@chilehaus.cl"
-          className="mt-10 text-sm px-8 py-3 border border-gold text-gold hover:bg-gold hover:text-forest-deep transition-all"
-        >
-          info@chilehaus.cl
-        </a>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm">
+          <a
+            href="mailto:info@chilehaus.cl"
+            className="px-6 py-2.5 bg-ink text-bone hover:bg-ink-soft transition-colors tracking-wide"
+          >
+            Escríbenos
+          </a>
+          <a
+            href="https://wa.me/56954085135"
+            target="_blank"
+            rel="noopener"
+            className="text-ink-dim hover:text-gold-deep transition-colors border-b border-paper-border hover:border-gold-deep pb-0.5"
+          >
+            WhatsApp →
+          </a>
+        </div>
       </main>
 
       <Footer />
