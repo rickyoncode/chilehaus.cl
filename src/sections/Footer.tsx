@@ -1,21 +1,11 @@
-import LogoMark from '../components/LogoMark'
-
 export default function Footer() {
   return (
     <footer className="bg-forest-deep text-bone py-16 md:py-20 wood-grain-dark">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12 md:gap-16">
           <div>
-            <div className="flex items-center gap-4">
-              <LogoMark className="w-12 h-12 text-gold" />
-              <div>
-                <div className="font-display font-semibold tracking-[0.18em] text-2xl text-gold leading-none">
-                  CHILEHAUS
-                </div>
-                <p className="mt-2 text-[10px] tracking-[0.3em] uppercase text-bone/50">
-                  Arquitectura e Ingeniería en Madera
-                </p>
-              </div>
+            <div>
+              <img src="/logo-vertical.png" alt="CHILEHAUS" className="h-40 w-auto" style={{ filter: 'brightness(0) invert(1)' }} />
             </div>
             <p className="mt-8 text-bone/70 text-sm max-w-md leading-relaxed">
               Digitalización y manufactura avanzada en madera, tipo boutique

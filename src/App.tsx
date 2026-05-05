@@ -1,7 +1,6 @@
 import './index.css'
 import Nav from './components/Nav'
 import Footer from './sections/Footer'
-import LogoMark from './components/LogoMark'
 
 export default function App() {
   return (
@@ -9,7 +8,7 @@ export default function App() {
       <Nav />
 
       <main className="flex-1 flex flex-col items-center justify-center px-6 py-20 text-center">
-        <LogoMark className="w-14 h-14 text-gold-deep mb-8 opacity-70" />
+        <img src="/logo-vertical.png" alt="CHILEHAUS" className="h-52 w-auto mb-2 opacity-90" />
 
         <h1 className="font-display text-4xl md:text-5xl font-semibold text-ink tracking-tight leading-tight">
           Sitio en mantención
